@@ -1,0 +1,179 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url("images/table.png");
+    background-size: cover;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin: 3rem auto;
+    width: 90%;
+    align-items: center;
+
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: goldenrod;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 1.8rem;
+}
+
+#player {
+    background-color: goldenrod;
+    color: black;
+    padding: .5rem;
+    border-radius: .5rem;
+    margin: 0;
+}
+
+#dealer{
+    background-color: black; 
+    padding: .5rem;
+    border-radius: .5rem;
+    margin: 0;
+}
+
+h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.button {
+    color: black;
+    width: 9rem;
+    height: 3rem;
+    background: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: .9rem;
+    border: .5rem;
+    border-radius: .5rem;
+    margin: .4rem;
+    
+}
+
+
+.button:hover  {
+    background: black;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.dimmed {
+    pointer-events: none;
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.wins {
+    border: 1.5rem solid goldenrod;
+
+}
+
+
+
+img {
+
+    padding: 0.2rem;
+    /* min-height: 200px; */
+    height: auto;
+    width: 8rem;
+    max-height: 15rem;
+    /* min-height: 8rem; */
+
+}
+
+#player-cards-el {
+    visibility: hidden;
+    font-size: 0x;
+    margin: 0;
+    padding: 0;
+}
+
+#dealer-cards-el {
+    visibility: hidden;
+    font-size: 0x;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;  /* Centers the flex items */
+    padding: .1rem;  /* Adds space on the left and right of the container */
+    flex-wrap: wrap;  /* Allows the flex items to wrap if they are too big for the container */
+    align-items: center;
+    margin: 0;
+
+}
+
+.flexbox-image-player {
+    display: flex;
+    margin: .5rem;
+    padding: .5rem;
+    border: goldenrod solid 2px;
+    border-radius: 0.5rem;
+    flex-shrink: 6;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    max-width: 90%;
+
+
+}
+
+.flexbox-image-dealer {
+    display: flex;
+    margin: .5rem;  
+    padding: .5rem;
+    border: black solid 2px;
+    border-radius: 0.5rem;
+    flex-shrink: 6;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    max-width: 90%
+
+
+}
+
+.flexbox-sum {
+    display: flex;
+    margin: 0 10px;  /* Adds a small margin on either side of each flexbox */
+    border: black solid 2px;
+    justify-content: center;  /* Centers the flex items */
+}
+
+#game-buttons {
+    margin-bottom: 15rem;
+
+}
+
+
+#reset-all-el {
+    background-color: black;
+    color: white;
+    
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+
+.confetti {
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000; /* You can use your desired colors */
+    position: absolute;
+    animation: fall 10s linear; /* Apply the "fall" animation to the confetti element */
+}

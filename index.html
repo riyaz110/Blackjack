@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BlackJack by Riyaz</title>
+    </head>
+    <body>
+        <div class="confetti-container">    
+            <h1>BlackJack by Riyaz</h1>
+            <h2 id="message-el">Want to play a round?</h2>
+            <h2 id="dealer-message-el">Take a chance!</h2>
+            <div class="main-container">
+                <div class="flexbox-image-player">
+                    <h3 id="player">Player</h3>
+                    <p>Player Sum: <span id="player-sum-el"></span></p>
+                    <div id="card-images-player-el">
+                    <img id="player-card-one-el" src="images/cards/QS.png">
+                    <img id="player-card-two-el" src="images/cards/AS.png">
+                    </div>
+                </div>
+                <div class="flexbox-image-dealer">  
+                    <h3 id="dealer">Dealer</h3>
+                    <p>Dealer Sum: <span id="dealer-sum-el"></span></p>
+                    <div id="card-images-dealer-el">
+                    <img id="dealer-card-one-el" src="images/cards/QS.png" alt="Queen of Spades">
+                    <img id="dealer-card-two-el" src="images/cards/AS.png" alt="Ace of Spades">
+                    </div>
+
+                </div>
+            </div>
+            <div id="game-buttons">
+            <button class="button" id="start-game-el" onclick="hidePlayerImages(); hideDealerImages(); startPlayerGame(); startDealerGame();">START GAME</button>
+            <button class="button" id="new-card-el" onclick="newCard()">NEW CARD</button>
+            <button class="button" id="stay-el" onclick="compareHands()">HOLD</button>
+            <button class="button" id="reset-all-el" onclick="clearAll()">CLEAR</button>
+            <p id="player-cards-el">Cards:</p>
+            <p id="dealer-cards-el">Cards:</p>
+            </div>
+        </div>
+
+        <script src="dealergame.js"></script>
+        <script src="playergame.js"></script>
+        <script src="compete.js"></script>
+    </body>
+</html>
